@@ -1,0 +1,62 @@
+//SLEEP IN
+public boolean sleepIn(boolean weekday, boolean vacation) {
+  if (!weekday || vacation) {    
+    return true;
+  }
+  return false;
+}
+//! means not
+
+//MONKEY TROUBLE
+public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
+  return (aSmile == bSmile);
+}
+//if one equals the other it will return the other true= true therefore it returns true
+//put two == when using the equal sign
+
+//SUM DOUBLE
+public int sumDouble(int a, int b) {
+  int sum = a + b;
+  if (a == b)
+  {
+    sum = sum*2;
+  }
+  
+  return sum;
+}
+//declare an integer sum b/c it applies in both cases
+
+//DIFF21
+public int diff21(int n) {
+  if (n<= 21)
+  {
+    return 21 - n;
+  }
+  else
+  {
+    return (n-21)*2;
+  }
+}
+
+//PARROTTROUBLE
+public boolean parrotTrouble(boolean talking, int hour) {
+  if (talking && (hour<7 || hour>20))
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+//What does the two lines mean? possibly or
+
+//NEARHUNDRED
+public boolean nearHundred(int n) {
+  if ((Math.abs(100-n) <= 10) || (Math.abs(200-n) <= 10))
+  {
+    return true;
+  }
+  return false;
+}
+//Math.abs(num) is used for the absoulte value of a number
